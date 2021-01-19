@@ -122,10 +122,13 @@ $(document).ready(() => {
                 });
             }
 
-            const left = $mainColumn.offset().left + $mainColumn.outerWidth() + padding;
+            // const left = $mainColumn.offset().left + $mainColumn.outerWidth() + padding;
             nextState = Object.assign({}, nextState, {
-                left: Math.min(left, maxLeft)
+                // left: Math.min(left, maxLeft)
+                right:100
             });
+    // const  right = 100
+    // applyState(right)
             applyState(nextState);
         } else {
             // mobile and tablet mode
